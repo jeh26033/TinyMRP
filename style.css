@@ -8,6 +8,8 @@
   border-bottom: 4px solid #2a8bbe;
 }
 .mainImage {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   position: absolute;
   left: 0;
   right: 0;
@@ -19,7 +21,8 @@
 .infoSec { 
   height: 600px;
   min-height: 600px;
-  background-color: #1c394f;
+  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://images.unsplash.com/photo-1554176259-aa961fc32671?ixlib=rb-1.2.1&auto=format&fit=crop&w=1305&q=80) no-repeat scroll center / cover;
+
 }
 .quad{
   background-color: #1c394f;
@@ -64,6 +67,8 @@ right: 0;
   filter: blur(0px);
 }
 
+
+
 .inactive{
   overflow: hidden;
   transition: width 1s, height 1s, blur 1s;
@@ -87,7 +92,9 @@ right: 0;
 .activeDiv .quad:hover { 
   height:500px;
 }
-.activeDiv .quad:not(:hover)
+.activeDiv .quad:not(:hover){
+  height: 500px;
+}
 .inactiveDiv .quad:not(:hover){
   height: 100px!important;
   transition:  height 1s;
