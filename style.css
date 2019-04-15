@@ -1,0 +1,65 @@
+#miniMRP {
+  height: 400px;
+  min-height: 400px;
+}
+.mrpTitle {
+  border-bottom: 4px solid #2a8bbe;
+}
+.mainImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.infoSec { 
+  height: 400px;
+  min-height: 400px;
+  background-color: #1c394f;
+}
+.quad{
+  background-color: #1c394f;
+  height: 200px;
+  overflow: hidden;
+}
+.quadOverlay { 
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0; 
+ opacity: .95;
+ z-index: 4;
+}
+.quadOverlay > h3 { 
+text-align: center;
+top: 40%;
+position: absolute;
+left: 0;
+right: 0;
+}
+/*.quad1 .quadOverlay, .quad2 .quadOverlay, .quad3 .quadOverlay, .quad4 .quadOverlay {
+  background: linear-gradient(rgba(45, 150, 205, .6), rgba(45, 150, 205, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+}*/
+.quad1 .quadOverlay, .quad3 .quadOverlay {
+  background: linear-gradient(rgba(45, 150, 205, .6), rgba(45, 150, 205, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+}
+.quad2 .quadOverlay, .quad4 .quadOverlay {
+  background: linear-gradient(rgba(0, 99, 155, 0.6)), rgba(0, 99, 155, 0.6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+}
+.active{
+  filter: blur(0px);
+  overflow: scroll;
+}
+
+.inactive{
+  overflow: hidden;
+  transition: width 2s, height 2s, blur 2s;
+  -webkit-transition: width 2s, height 2s, blur 2s; /* Safari 3.1 to 6.0 */ 
+}
+
+.active:hover{
+   filter: blur(0px);
+   transition: width 2s, height 1s, blur 2s; 
+   -webkit-transition: width 2s, height 1s, blur 2s; /* Safari 3.1 to 6.0 */ 
+}
+
