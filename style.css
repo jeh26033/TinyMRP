@@ -50,7 +50,7 @@ left: 0;
 right: 0;
 }
 .quad1 .quadOverlay {
-  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-1.jpg) no-repeat scroll center / cover;
 }
 .quad4 .quadOverlay {
   background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-4.jpg) no-repeat scroll center / cover;
@@ -64,8 +64,6 @@ right: 0;
 .active{
   filter: blur(0px);
 }
-
-
 
 .inactive{
   overflow: hidden;
