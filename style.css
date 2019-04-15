@@ -21,7 +21,7 @@
 .infoSec { 
   height: 600px;
   min-height: 600px;
-  background:  url(https://images.unsplash.com/photo-1519357312273-a956f309a1ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat scroll center / cover;
+  background:  linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, 0)), url(https://images.unsplash.com/photo-1519357312273-a956f309a1ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat scroll center / cover;
 
 }
 .quad{
