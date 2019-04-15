@@ -1,6 +1,8 @@
 #miniMRP {
-  height: 400px;
-  min-height: 400px;
+  height: 600px;
+  max-height:600px;
+  overflow: hidden;
+  background-color: #2a8bbe;
 }
 .mrpTitle {
   border-bottom: 4px solid #2a8bbe;
@@ -15,13 +17,13 @@
   color:#fff;
 }
 .infoSec { 
-  height: 400px;
-  min-height: 400px;
+  height: 600px;
+  min-height: 600px;
   background-color: #1c394f;
 }
 .quad{
   background-color: #1c394f;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
 }
 .quadOverlay { 
@@ -32,12 +34,14 @@
  left: 0; 
  opacity: .95;
  z-index: 4;
- transition: opacity 2s;
- -webkit-transition: opacity 2s; /* Safari 3.1 to 6.0 */ 
+ transition: opacity 1s;
+ -webkit-transition: opacity 1s; /* Safari 3.1 to 6.0 */ 
 }
 .quadOverlay:hover{ 
  opacity: 0;
 }
+.cardRow { background-color: #1c394f; }
+
 .quadOverlay > h3 { 
 text-align: center;
 top: 40%;
@@ -50,18 +54,36 @@ right: 0;
 }
 .active{
   filter: blur(0px);
-  overflow: scroll;
+
+
 }
 
 .inactive{
   overflow: hidden;
-  transition: width 2s, height 2s, blur 2s;
-  -webkit-transition: width 2s, height 2s, blur 2s; /* Safari 3.1 to 6.0 */ 
+  transition: width 1s, height 1s, blur 1s;
+  -webkit-transition: width 1s, height 1s, blur 1s; /* Safari 3.1 to 6.0 */ 
 }
 
 .active:hover{
    filter: blur(0px);
-   transition: width 2s, height 1s, blur 2s; 
-   -webkit-transition: width 2s, height 1s, blur 2s; /* Safari 3.1 to 6.0 */ 
+   height:500px;
+   transition: width 1s, height 1s, blur 1s; 
+   -webkit-transition: width 1s, height 1s, blur 1s; /* Safari 3.1 to 6.0 */ 
 }
 
+.activeDiv { 
+  background-color: #2a8bbe;
+  height:200px;
+   transition:  height 1s;
+   -webkit-transition: height 1s; /* Safari 3.1 to 6.0 */ 
+}
+
+.activeDiv:hover { 
+  height:500px;
+}
+
+.inactiveDiv .quad:not(:hover){
+  height: 100px!important;
+  transition:  height 1s;
+  -webkit-transition: height 1s; /* Safari 3.1 to 6.0 */ 
+}
