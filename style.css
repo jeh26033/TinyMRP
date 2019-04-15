@@ -65,6 +65,8 @@ right: 0;
   filter: blur(0px);
 }
 
+
+
 .inactive{
   overflow: hidden;
   transition: width 1s, height 1s, blur 1s;
@@ -88,7 +90,9 @@ right: 0;
 .activeDiv .quad:hover { 
   height:500px;
 }
-.activeDiv .quad:not(:hover)
+.activeDiv .quad:not(:hover){
+  height: 500px;
+}
 .inactiveDiv .quad:not(:hover){
   height: 100px!important;
   transition:  height 1s;
