@@ -81,10 +81,10 @@ right: 0;
    -webkit-transition: height 1s; /* Safari 3.1 to 6.0 */ 
 }
 
-.activeDiv:hover { 
+.activeDiv .quad:hover { 
   height:500px;
 }
-
+.activeDiv .quad:not(:hover)
 .inactiveDiv .quad:not(:hover){
   height: 100px!important;
   transition:  height 1s;
