@@ -21,7 +21,7 @@
 .infoSec { 
   height: 600px;
   min-height: 600px;
-  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://images.unsplash.com/photo-1554176259-aa961fc32671?ixlib=rb-1.2.1&auto=format&fit=crop&w=1305&q=80) no-repeat scroll center / cover;
+  background:  url(https://images.unsplash.com/photo-1519357312273-a956f309a1ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat scroll center / cover;
 
 }
 .quad{
@@ -35,7 +35,7 @@
  bottom: 0;
  right: 0;
  left: 0; 
- opacity: .95;
+ opacity:1;
  z-index: 4;
  transition: opacity 1s;
  -webkit-transition: opacity 1s; /* Safari 3.1 to 6.0 */ 
@@ -50,13 +50,16 @@ text-align: center;
 top: 40%;
 position: absolute;
 left: 0;
+border-bottom: 2px solid #fff;
+margin:auto;
+width: 20%;
 right: 0;
 }
 .quad1 .quadOverlay {
-  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-1.jpg) no-repeat scroll center / cover;
+  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(http://assets1.dealeron.com/assets/shared/CustomHTMLFiles/Responsive/MRP/Ford/2019/Fiesta/images/2019-Ford-Fiesta-01.jpg) no-repeat scroll center / cover;
 }
 .quad4 .quadOverlay {
-  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-4.jpg) no-repeat scroll center / cover;
+  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1484191914255-a429e6f819b4%3Fixlib%3Drb-1.2.1%26q%3D80%26fm%3Djpg%26crop%3Dentropy%26cs%3Dtinysrgb%26w%3D1080%26fit%3Dmax) no-repeat scroll center / cover;
 }
 .quad2 .quadOverlay {
   background: linear-gradient(rgba(0, 99, 155, 0.6), rgba(0, 99, 155, 0.6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-2.jpg) no-repeat scroll center / cover;
@@ -64,6 +67,8 @@ right: 0;
 .quad3 .quadOverlay {
   background: linear-gradient(rgba(0, 99, 155, 0.6), rgba(0, 99, 155, 0.6)), url(https://cdn.dlron.us/static/dealer-14457/mrpnav-3.jpg) no-repeat scroll center / cover;
 }
+
+
 .active{
   filter: blur(0px);
 }
