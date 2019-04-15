@@ -11,6 +11,9 @@
   right: 0;
   bottom: 0;
 }
+.text-white {
+  color:#fff;
+}
 .infoSec { 
   height: 400px;
   min-height: 400px;
@@ -29,6 +32,11 @@
  left: 0; 
  opacity: .95;
  z-index: 4;
+ transition: opacity 2s;
+ -webkit-transition: opacity 2s; /* Safari 3.1 to 6.0 */ 
+}
+.quadOverlay:hover{ 
+ opacity: 0;
 }
 .quadOverlay > h3 { 
 text-align: center;
@@ -37,14 +45,8 @@ position: absolute;
 left: 0;
 right: 0;
 }
-/*.quad1 .quadOverlay, .quad2 .quadOverlay, .quad3 .quadOverlay, .quad4 .quadOverlay {
+.quad1 .quadOverlay, .quad2 .quadOverlay, .quad3 .quadOverlay, .quad4 .quadOverlay {
   background: linear-gradient(rgba(45, 150, 205, .6), rgba(45, 150, 205, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
-}*/
-.quad1 .quadOverlay, .quad3 .quadOverlay {
-  background: linear-gradient(rgba(45, 150, 205, .6), rgba(45, 150, 205, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
-}
-.quad2 .quadOverlay, .quad4 .quadOverlay {
-  background: linear-gradient(rgba(0, 99, 155, 0.6)), rgba(0, 99, 155, 0.6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
 }
 .active{
   filter: blur(0px);
