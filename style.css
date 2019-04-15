@@ -49,14 +49,17 @@ position: absolute;
 left: 0;
 right: 0;
 }
-.quad1 .quadOverlay, .quad2 .quadOverlay, .quad3 .quadOverlay, .quad4 .quadOverlay {
-  background: linear-gradient(rgba(45, 150, 205, .6), rgba(45, 150, 205, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+.quad1 .quadOverlay, .quad4 .quadOverlay {
+  background: linear-gradient(rgba(18, 127, 188, .6), rgba(18, 127, 188, .6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
+}
+.quad2 .quadOverlay, .quad3 .quadOverlay {
+  background: linear-gradient(rgba(0, 99, 155, 0.6), rgba(0, 99, 155, 0.6)), url(/assets/styles/725/images/quickNav4.jpg) no-repeat scroll center / cover;
 }
 .active{
   filter: blur(0px);
-
-
 }
+
+
 
 .inactive{
   overflow: hidden;
